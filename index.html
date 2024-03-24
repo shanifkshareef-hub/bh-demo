@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach House Productions</title>
+    <style>
+      
+    </style>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/nw/logobhp.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/nw/logobhp.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/nw/logobhp.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Beach House Productions" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .home-section {
+text-align: center;
+padding: calc(100px + 90 * (100vw - 320px) / 1600) 0 calc(40px + 20 * (100vw - 320px) / 1600);
+position: relative;
+background-image: url(../images/home/home-bg.png);
+background-size: cover;
+z-index: 1;
+}
+@media (max-width: 991px) {
+.home-section {
+  overflow: hidden;
+}
+}
+.home-section .bg-effect .bg-gif {
+position: absolute;
+left: 50%;
+-webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+width: 55%;
+z-index: -1;
+top: 0;
+opacity: 0.04;
+mix-blend-mode: lighten;
+}
+.home-section .bg-effect .effect1 {
+position: absolute;
+left: 7%;
+top: 24%;
+}
+@media (max-width: 1199px) {
+.home-section .bg-effect .effect1 {
+  left: 1%;
+}
+}
+@media (max-width: 767px) {
+.home-section .bg-effect .effect1 {
+  left: -10px;
+}
+}
+@media (max-width: 650px) {
+.home-section .bg-effect .effect1 {
+  display: none;
+}
+}
+.home-section .bg-effect .effect2 {
+position: absolute;
+right: 8%;
+bottom: 28%;
+}
+@media (max-width: 1199px) {
+.home-section .bg-effect .effect2 {
+  right: 5%;
+}
+}
+@media (max-width: 767px) {
+.home-section .bg-effect .effect2 {
+  display: none;
+}
+}
+.home-section .home-content h1 {
+color: rgba(var(--title-color), 1);
+}
+@media (max-width: 991px) {
+.home-section .home-content h1 {
+  font-size: 30px;
+}
+}
+@media (max-width: 767px) {
+.home-section .home-content h1 {
+  font-size: 24px;
+}
+}
+.home-section .home-content h1 .title-effect {
+padding: 3px 20px;
+background-color: #17273f;
+display: inline-block;
+position: relative;
+margin: 0 15px;
+}
+@media (max-width: 767px) {
+.home-section .home-content h1 .title-effect {
+  padding: 1px 10px;
+}
+}
+@media (max-width: 576px) {
+.home-section .home-content h1 .title-effect {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+}
+.home-section .home-content h1 .title-effect img {
+position: absolute;
+left: -18px;
+top: -18px;
+height: calc(100% + 36px);
+width: calc(100% + 36px);
+}
+@media (max-width: 576px) {
+.home-section .home-content h1 .title-effect img {
+  display: none;
+}
+}
+.home-section .home-content h1 .title-effect span {
+background: url("../images/title-bg.jpg");
+background-position: bottom;
+-webkit-background-clip: text;
+color: transparent;
+}
+.home-section .home-content p {
+width: 70%;
+margin: 0 auto;
+margin: 32px auto;
+}
+@media (max-width: 1199px) {
+.home-section .home-content p {
+  width: 80%;
+  margin: calc(16px + 16 * (100vw - 320px) / 1600) auto calc(10px + 10 * (100vw - 320px) / 1600);
+}
+}
+@media (max-width: 991px) {
+.home-section .home-content p {
+  width: 100%;
+}
+}
+.home-section .home-content .start-link {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+color: rgba(var(--theme-color), 1);
+font-size: calc(18px + 4 * (100vw - 320px) / 1600);
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+gap: 10px;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+width: -webkit-max-content;
+width: -moz-max-content;
+width: max-content;
+margin: 0 auto;
+}
+.home-section .home-content .start-link:hover {
+-webkit-transform: translateY(-5px) scale(1.1);
+        transform: translateY(-5px) scale(1.1);
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.home-section .home-content .start-link svg {
+stroke: rgba(var(--theme-color), 1);
+}
+.home-section .home-laptop {
+margin-top: 48px;
+}
+.home-section .home-laptop .laptop-sec {
+-webkit-perspective: 1130px;
+        perspective: 1130px;
+}
+.home-section .home-laptop .laptop-img {
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+vertical-align: middle;
+-webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+will-change: transform;
+}
+@media (max-width: 767px) {
+.home-section .home-laptop .hand-sec {
+  display: none;
+}
+}
+.home-section .home-laptop .hand-sec .left-hand {
+position: absolute;
+bottom: calc(-100% + 108px);
+left: 215px;
+}
+@media (max-width: 1430px) {
+.home-section .home-laptop .hand-sec .left-hand {
+  left: 188px;
+  bottom: calc(-100% + 99px);
+}
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .hand-sec .left-hand {
+  left: 97px;
+  bottom: calc(-100% + 97px);
+}
+}
+@media (max-width: 1199px) {
+.home-section .home-laptop .hand-sec .left-hand {
+  left: 10px;
+  bottom: calc(-100% + 98px);
+}
+}
+@media (max-width: 991px) {
+.home-section .home-laptop .hand-sec .left-hand {
+  left: -105px;
+}
+}
+.home-section .home-laptop .hand-sec .right-hand {
+position: absolute;
+bottom: calc(-100% + 108px);
+right: 215px;
+-webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+}
+@media (max-width: 1430px) {
+.home-section .home-laptop .hand-sec .right-hand {
+  right: 188px;
+  bottom: calc(-100% + 99px);
+}
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .hand-sec .right-hand {
+  right: 97px;
+  bottom: calc(-100% + 97px);
+}
+}
+@media (max-width: 1199px) {
+.home-section .home-laptop .hand-sec .right-hand {
+  right: 10px;
+  bottom: calc(-100% + 98px);
+}
+}
+@media (max-width: 991px) {
+.home-section .home-laptop .hand-sec .right-hand {
+  right: -105px;
+}
+}
+.home-section .home-laptop .hand-sec .left-finger {
+position: absolute;
+bottom: -8px;
+left: 305px;
+z-index: 1;
+}
+@media (max-width: 1430px) {
+.home-section .home-laptop .hand-sec .left-finger {
+  left: 292px;
+}
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .hand-sec .left-finger {
+  left: 202px;
+}
+}
+@media (max-width: 1199px) {
+.home-section .home-laptop .hand-sec .left-finger {
+  left: 115px;
+}
+}
+@media (max-width: 991px) {
+.home-section .home-laptop .hand-sec .left-finger {
+  left: 0;
+}
+}
+.home-section .home-laptop .hand-sec .right-finger {
+position: absolute;
+bottom: -8px;
+right: 305px;
+z-index: 1;
+-webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+}
+@media (max-width: 1430px) {
+.home-section .home-laptop .hand-sec .right-finger {
+  right: 292px;
+}
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .hand-sec .right-finger {
+  right: 202px;
+}
+}
+@media (max-width: 1199px) {
+.home-section .home-laptop .hand-sec .right-finger {
+  right: 115px;
+}
+}
+@media (max-width: 991px) {
+.home-section .home-laptop .hand-sec .right-finger {
+  right: 0;
+}
+}
+.home-section .home-laptop .home-info {
+margin-top: 75px;
+}
+@media (max-width: 767px) {
+.home-section .home-laptop .home-info {
+  margin-top: calc(25px + 20 * (100vw - 320px) / 1600);
+}
+}
+.home-section .home-laptop .home-info .info-list {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+gap: 2px 25px;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+padding-bottom: calc(20px + 12 * (100vw - 320px) / 1600);
+position: relative;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .home-info .info-list {
+  gap: 2px 15px;
+}
+}
+.home-section .home-laptop .home-info .info-list:after {
+content: "";
+width: 32px;
+height: 2px;
+background-color: rgba(var(--theme-color), 1);
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+-webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+.home-section .home-laptop .home-info .info-list li {
+font-size: calc(18px + 2 * (100vw - 320px) / 1600);
+color: rgba(var(--theme-color), 1);
+padding-left: 15px;
+position: relative;
+}
+@media (max-width: 1400px) {
+.home-section .home-laptop .home-info .info-list li {
+  padding-left: 8px;
+}
+}
+.home-section .home-laptop .home-info .info-list li:after {
+content: "";
+position: absolute;
+width: 4px;
+height: 4px;
+background-color: rgba(var(--theme-color), 1);
+border-radius: 100%;
+left: 0;
+top: 50%;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+.home-section .home-laptop .home-info .star-rating {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+gap: 3px;
+color: #ffb800;
+margin-top: 8px;
+}
+.home-section .home-laptop .home-info .star-rating i {
+font-size: 18px;
+}
+.home-section .home-laptop .home-info h4 {
+color: rgba(var(--title-color), 1);
+max-width: 27%;
+margin: 4px auto 0;
+line-height: 1.4;
+}
+@media (max-width: 991px) {
+.home-section .home-laptop .home-info h4 {
+  max-width: 48%;
+}
+}
+@media (max-width: 767px) {
+.home-section .home-laptop .home-info h4 {
+  max-width: 58%;
+}
+}
+@media (max-width: 576px) {
+.home-section .home-laptop .home-info h4 {
+  max-width: 90%;
+}
+}
+@media (max-width: 360px) {
+.home-section .home-laptop .home-info h4 {
+  max-width: 100%;
+}
+}
+  </style>
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/nouislider/nouislider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/nouislider/nouislider.pips.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/ambed-icons/style.css" />
+    <link rel="stylesheet" href="assets/nw/icons/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/tiny-slider/tiny-slider.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/ambed.css" />
+    <link rel="stylesheet" href="assets/css/ambed-responsive.css" />
+
+    <!-- modes css -->
+    <link rel="stylesheet" id="jssMode" href="assets/css/ambed-dark.css" />
+
+    <!-- toolbar css -->
+    <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css" />
+  </head>
+
+  <body class="custom-cursor">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two">
+      
+    </div>
+
+    <div class="preloader">
+      <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+      <header class="main-header-two clearfix">
+        <nav class="main-menu main-menu-two clearfix">
+          <div class="main-menu-two__wrapper clearfix">
+            <div class="main-menu-two__left">
+              <div class="main-menu-two__logo">
+                <a href="index.html">
+                  <img
+                    src="assets/nw/logo-light.png"
+                    class="light-logo"
+                    alt=""
+                  />
+                  <img
+                    src="assets/images/resources/logo-1.png"
+                    alt=""
+                    class="dark-logo"
+                  />
+                </a>
+              </div>
+              <div class="main-menu-two__main-menu-two-box">
+                <div class="main-menu-two__social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="main-menu-two__main-menu-two-inner">
+                  <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                  ></a>
+                  <ul class="main-menu__list one-page-scroll-menu">
+                    <li class="scrollToLink current">
+                      <a href="#home">Home </a>
+                    </li>
+                    <li class="scrollToLink">
+                      <a href="#about">About </a>
+                    </li>
+
+                    <li class="scrollToLink">
+                      <a href="#services">Services </a>
+                    </li>
+
+                    <li class="scrollToLink">
+                      <a href="#contact">Contact </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="stricky-header stricked-menu main-menu main-menu-two">
+        <div class="sticky-header__content"></div>
+        <!-- /.sticky-header__content -->
+      </div>
+
+
+      <!-- <section class="main-slider-two" id="home">
+        <div
+          class="swiper-container thm-swiper__slider"
+          data-swiper-options='{"slidesPerView": 1, "loop": true,
+                  "effect": "fade",
+                  "pagination": {
+                  "el": "#main-slider-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                  },
+                  "navigation": {
+                  "nextEl": "#main-slider__swiper-button-next",
+                  "prevEl": "#main-slider__swiper-button-prev"
+                  },
+                  "autoplay": {
+                  "delay": 5000
+                  }}'
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="background-image: url(assets/nw/banner4.jpg)"
+              ></div>
+              <!-- /.image-layer -->
+              <!-- <div class="container">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="main-slider-two__content">
+                      <p class="main-slider-two__sub-title">
+                        Unleasing Creativity
+                      </p>
+                      <h2 class="main-slider-two__title">
+                        Beach <br />
+                        House <br />
+                        Productions
+                      </h2>
+                      <div class="main-slider-two__btn-box">
+                        <a href="#about" class="main-slider-two__btn thm-btn"
+                          >Discover More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- /.stricky-header -->
+      <!-- /.stricky-header -->
+      <section class="home-section" style="margin-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-content">
+                        <div class="bg-effect">
+                            <img src="../assets/images/home/home-bg.gif" class="img-fluid bg-gif" alt="">
+                            <img src="../assets/svg/home/1.png" class="img-fluid effect1 rotate-effect" alt="">
+                            <img src="../assets/svg/home/2.svg" class="img-fluid effect2 rotate-effect" alt="">
+                        </div>                      
+                        <div>
+                            <!-- <a data-cursor="pointer" class="start-link"><i class="iconsax" data-icon="play-circle"></i>Start free trial</a> -->
+                        </div>
+                    </div>
+                    <div style="margin-top: 150px;" class=" home-laptop px-md-0 px-3">
+                        <div class="laptop-sec position-relative">
+                            <div class="hand-sec">
+                                <img src="../assets/images/home/hand.png" class="img-fluid left-hand" alt="hand">
+                                <img src="../assets/images/home/hand.png" class="img-fluid right-hand" alt="hand">
+                                <img src="../assets/images/home/finger.png" class="img-fluid left-finger" alt="hand">
+                                <img src="../assets/images/home/finger.png" class="img-fluid right-finger" alt="hand">
+                            </div>
+                            
+                            <img src="./assets/images/backgrounds/bg3.png"  class="img-fluid laptop-img" alt="laptop">
+                        </div>
+                        <div class="home-info">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!--Main Slider Start-->
+      <!-- <section class="main-slider-two" id="home">
+        <div
+          class="swiper-container thm-swiper__slider"
+          data-swiper-options='{"slidesPerView": 1, "loop": true,
+                  "effect": "fade",
+                  "pagination": {
+                  "el": "#main-slider-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                  },
+                  "navigation": {
+                  "nextEl": "#main-slider__swiper-button-next",
+                  "prevEl": "#main-slider__swiper-button-prev"
+                  },
+                  "autoplay": {
+                  "delay": 5000
+                  }}'
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="background-image: url(./assets/images/backgrounds/vbg.jpg)"
+              ></div>
+              <!-- /.image-layer -->
+<!--              
+            </div>
+          </div>
+        </div>
+      </section> --> 
+      <!--Main Slider End-->
+
+      <!--About One Start-->
+      <section id="about" class="about-one">
+        <div class="about-one-shape-2 float-bob-x"></div>
+        <div class="about-one-wall">
+          <img src="assets/images/shapes/about-one-wall.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="about-one__left">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">About company</span>
+                  <h2 class="section-title__title">
+                    Welcome to Beach House Productions
+                  </h2>
+                  <div class="section-title__line"></div>
+                </div>
+                <p class="about-one__text-1">
+                  We have 5+ years of experiences for give you better quality
+                  results.
+                </p>
+                <ul class="list-unstyled about-one__points">
+                  <li>
+                    <div class="about-one__points-content-box">
+                      <div class="about-one__points-icon">
+                        <span class="icon-mind"></span>
+                      </div>
+                      <div class="about-one__points-text-box">
+                        <p class="about-one__points-text">
+                          Smart & Unique Work
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="about-one__points-content-box">
+                      <div class="about-one__points-icon">
+                        <span class="icon-high-quality"></span>
+                      </div>
+                      <div class="about-one__points-text-box">
+                        <p class="about-one__points-text">
+                          The Best Quality Standards
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <p class="about-one__text-2">
+                  At Beach House Productions, we're dedicated to being your
+                  global marketing solutions team. With a diverse client base
+                  exceeding 50, B2B development solutions, we offer
+                  comprehensive services, including website development,
+                  versatile photography, corporate videography, dynamic
+                  commercial ads, whole event photography, and live
+                  broadcasting.
+                </p>
+                <div class="about-one__contact-us">
+                  <!-- <div class="about-one__btn-box">
+                    <a href="about.html" class="thm-btn about-one__btn"
+                      >Read More About</a
+                    >
+                  </div> -->
+                  <div class="about-one__call">
+                    <div class="about-one__call-icon">
+                      <span class="icon-phone-call"></span>
+                    </div>
+                    <div class="about-one__call-text">
+                      <p>Call anytime</p>
+                      <a href="tel:8585963022">+ 91 8585 9630 22</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="about-one__right">
+                <div
+                  class="about-one__img-box wow slideInRight"
+                  data-wow-delay="100ms"
+                  data-wow-duration="2500ms"
+                >
+                  <div class="about-one__img">
+                    <img src="assets/nw/about1.jpg" alt="" />
+                  </div>
+                  <div class="about-one__small-img">
+                    <img src="assets/nw/about3.png" alt="" />
+                  </div>
+                  <div class="about-one__project">
+                    <div class="about-one__project-icon">
+                      <span class="icon-wallpaper-1"></span>
+                    </div>
+                    <div class="about-one__project-content">
+                      <h3 class="odometer" data-count="3690">00</h3>
+                      <p class="about-one__project-text">Successful Project</p>
+                    </div>
+                  </div>
+                  <div class="about-one__shape-1 float-bob-y"></div>
+                  <div class="about-one__dot">
+                    <img src="assets/images/shapes/about-one-dots.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About One End-->
+      
+
+      <!--Feature One Start-->
+      <section class="feature-one">
+        <div class="container">
+          <ul class="list-unstyled feature-one__list">
+            <!--Feature One Single-->
+            <li
+              class="feature-one__single wow fadeInLeft"
+              data-wow-delay="100ms"
+            >
+              <div class="feature-one__content">
+                <div class="feature-one__shape-1">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__shape-2">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__icon">
+                  <span class="icon-mind"></span>
+                </div>
+                <h3 class="feature-one__title">
+                  <a href="#contact">Branding</a>
+                </h3>
+                <p class="feature-one__text">
+                  Crafting unique identities and messages to distinguish brands
+                  in the market.
+                </p>
+                <div class="feature-one__arrow">
+                  <a href="#contact"><i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <!--Feature One Single-->
+            <li
+              class="feature-one__single wow fadeInLeft"
+              data-wow-delay="200ms"
+            >
+              <div class="feature-one__content">
+                <div class="feature-one__shape-1">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__shape-2">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__icon">
+                  <span class="icon-wallpaper-2"></span>
+                </div>
+                <h3 class="feature-one__title">
+                  <a href="#contact">Digital Branding</a>
+                </h3>
+                <p class="feature-one__text">
+                  Establishing strong online presences through strategic digital
+                  marketing.
+                </p>
+                <div class="feature-one__arrow">
+                  <a href="#contact"><i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <!--Feature One Single-->
+            <li
+              class="feature-one__single wow fadeInLeft"
+              data-wow-delay="300ms"
+            >
+              <div class="feature-one__content">
+                <div class="feature-one__shape-1">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__shape-2">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__icon">
+                  <span class="icon-programmer"></span>
+                </div>
+                <h3 class="feature-one__title">
+                  <a href="#contact">AD Films</a>
+                </h3>
+                <p class="feature-one__text">
+                  Visual storytelling to engage audiences and promote products
+                  effectively.
+                </p>
+                <div class="feature-one__arrow">
+                  <a href="#contact"><i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <!--Feature One Single-->
+            <li
+              class="feature-one__single wow fadeInLeft"
+              data-wow-delay="400ms"
+            >
+              <div class="feature-one__content">
+                <div class="feature-one__shape-1">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__shape-2">
+                  <img
+                    src="assets/images/shapes/feature-one-shape-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="feature-one__icon">
+                  <span class="icon-megaphone"></span>
+                </div>
+                <h3 class="feature-one__title">
+                  <a href="#contact">PR Works</a>
+                </h3>
+                <p class="feature-one__text">
+                  Building and managing relationships with the media to generate
+                  good publicity.
+                </p>
+                <div class="feature-one__arrow">
+                  <a href="#contact"><i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Feature One End-->
+
+      <!--Services One Start-->
+      <section id="services" class="services-one">
+        <div class="services-one-bg-box">
+          <div
+            class="services-one-bg jarallax"
+            data-jarallax
+            data-speed="0.2"
+            data-imgPosition="50% 0%"
+            style="background-image: url(assets/nw/banner3.png)"
+          ></div>
+        </div>
+
+        <div class="contair">
+          <!--Working Process Start-->
+          <section class="working-process">
+            <div class="container">
+              <div class="section-title text-center">
+                <span class="section-title__tagline">Our Services</span>
+                <h2 class="section-title__title">
+                  Specialized in B2B development solution
+                </h2>
+                <div class="section-title__line"></div>
+              </div>
+              <div class="working-process__inner" style="z-index: 4">
+                <div class="row">
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-list"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="about.html">Consultation</a>
+                      </h3>
+                      <p class="working-process__text">
+                        Expert guidance and advice to help businesses navigate
+                        challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-code"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="team.html"
+                          >Website <br />
+                          Development</a
+                        >
+                      </h3>
+                      <p class="working-process__text">
+                        Designing and developing user-friendly websites.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-experts"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="about.html"
+                          >Offline Marketing <br />
+                          Strategies</a
+                        >
+                      </h3>
+                      <p class="working-process__text">
+                        Implementing creative tactics beyond digital channels.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-camera1"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="about.html"
+                          >Aerial Photography <br />
+                          & Videography</a
+                        >
+                      </h3>
+                      <p class="working-process__text">
+                        Capturing stunning aerial views to showcase.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-tv"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="team.html"
+                          >Live Broadcasting <br />
+                          & Streaming</a
+                        >
+                      </h3>
+                      <p class="working-process__text">
+                        Engaging remote audiences and enhancing brand
+                        visibility.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
+                    <!--Working Process Single-->
+                    <div class="working-process__single">
+                      <div class="working-process__count"></div>
+                      <div class="working-process__icon">
+                        <span class="icon-paint-palette"></span>
+                      </div>
+                      <h3 class="working-process__title">
+                        <a href="about.html">Motion Graphics <br /> </a>
+                      </h3>
+                      <p class="working-process__text">
+                        Creating dynamic visual elements to captivate audiences
+                        effectively.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="working-process__inner" style="z-index: 4">
+                <div class="row"></div>
+              </div>
+            </div>
+          </section>
+          <!--Working Process End-->
+        </div>
+      </section>
+      <!--Services One End-->
+
+      <!--Quality Work Start-->
+      <section class="quality-work">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="quality-work__left">
+                <div class="quality-work__img-box">
+                  <div class="quality-work__img">
+                    <img src="assets/nw/dm1.png" alt="" />
+                  </div>
+                  <div class="quality-work__small-img">
+                    <img src="assets/nw/dm2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="quality-work__right">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">Digital Marketing</span>
+                  <h2 class="section-title__title">
+                    Maximize Your Online Reach with Our Expertise
+                  </h2>
+                  <div class="section-title__line"></div>
+                </div>
+                <p class="quality-work__text-1">
+                  Beach House Productions is dedicated to harnessing the
+                  transformative power of digital marketing to propel businesses
+                  forward and foster growth.
+                </p>
+                <ul class="list-unstyled quality-work__feature">
+                  <li>
+                    <div class="icon">
+                      <span class="icon-image-gallery1"></span>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Expert <br />
+                        Strategies
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <span class="icon-apartment"></span>
+                    </div>
+                    <div class="text">
+                      <p>Innovative <br />Solutions</p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- <p class="quality-work__text-2">
+                  Our advertising solutions leverage dynamic displays for
+                  captivating visuals and ensure wide exposure through
+                  traditional mediums, maximizing audience engagement and reach.
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Quality Work End-->
+
+      <!-- Brand One Start-->
+      <section class="brand-one">
+        <div class="container">
+          <div class="brand-one__inner">
+            <div class="row">
+              <div class="col-xl-3">
+                <div class="brand-one__title">
+                  <h2>
+                    Meet the faces behind our success stories: our valued
+                    clients.
+                  </h2>
+                </div>
+              </div>
+              <div class="col-xl-9">
+                <div class="brand-one__main-content">
+                  <div
+                    class="thm-swiper__slider swiper-container"
+                    data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 2000 }, "breakpoints": {
+                            "0": {
+                                "spaceBetween": 30,
+                                "slidesPerView": 2
+                            },
+                            "375": {
+                                "spaceBetween": 30,
+                                "slidesPerView": 2
+                            },
+                            "575": {
+                                "spaceBetween": 30,
+                                "slidesPerView": 3
+                            },
+                            "767": {
+                                "spaceBetween": 50,
+                                "slidesPerView": 4
+                            },
+                            "991": {
+                                "spaceBetween": 50,
+                                "slidesPerView": 5
+                            },
+                            "1199": {
+                                "spaceBetween": 100,
+                                "slidesPerView": 5
+                            }
+                        }}'
+                  >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/2.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/13.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/3.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/5.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/1.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/7.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/8.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/9.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/10.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/14.png" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/logo.png" height="78" width="140" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/client/logo2.png" height="78" width="140" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Brand One End -->
+
+      <!--Newsletter Start-->
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__inner wow fadeInUp" data-wow-delay="100ms">
+            <div
+              class="newsletter-shape-1"
+              style="
+                background-image: url(assets/images/shapes/newsletter-shape-1.png);
+              "
+            ></div>
+            <div class="newsletter__left">
+              <h3 class="newsletter__title">Join Our Newsletter</h3>
+              <p class="newsletter__text">
+                Ready to make waves in the world of marketing?
+              </p>
+            </div>
+            <div class="newsletter__right">
+              <form class="newsletter__form">
+                <div class="newsletter__input-box">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    name="email"
+                  />
+                  <button type="submit" class="thm-btn newsletter__btn">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Newsletter End-->
+
+      <!--Contact Page Start-->
+      <section id="contact" class="contact-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-7">
+              <div class="contact-page__left">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">Contact us</span>
+                  <h2 class="section-title__title">Feel Free to Write</h2>
+                  <div class="section-title__line"></div>
+                </div>
+                <div class="contact-page__form">
+                  <form
+                    action="assets/inc/sendemail.php"
+                    class="comment-one__form contact-form-validated"
+                    novalidate="novalidate"
+                  >
+                    <div class="row">
+                      <div class="col-xl-6">
+                        <div class="comment-form__input-box">
+                          <input
+                            type="text"
+                            placeholder="Your name"
+                            name="name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="comment-form__input-box">
+                          <input
+                            type="email"
+                            placeholder="Email address"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="comment-form__input-box">
+                          <input
+                            type="text"
+                            placeholder="Phone number"
+                            name="Phone"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="comment-form__input-box">
+                          <input
+                            type="text"
+                            placeholder="Subject"
+                            name="Subject"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-12">
+                        <div class="comment-form__input-box text-message-box">
+                          <textarea
+                            name="message"
+                            placeholder="Write a message"
+                          ></textarea>
+                        </div>
+                        <div class="comment-form__btn-box">
+                          <button
+                            type="submit"
+                            class="thm-btn comment-form__btn"
+                          >
+                            Send a Message
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+              <div class="contact-page__right">
+                <div class="contact-page__details">
+                  <ul class="list-unstyled contact-page__details-list">
+                    <li>
+                      <span>Call anytime</span>
+                      <p><a href="tel:+917539000666">+91 7539000666</a></p>
+                    </li>
+                    <!-- <li>
+                      <span>Send email</span>
+                      <p>
+                        <a href="mailto:test@company.com">test@company.com</a>
+                      </p>
+                    </li> -->
+                    <li>
+                      <span>Address line 1</span>
+                      <p> Beach House Productions
+                        <p>2nd Floor No 01 ,</p>
+                        <p>Fortune Bussiness Park <br>
+                        Cherooty Nagar Calicut
+                        </p></p>
+                    </li>
+                  </ul>
+                  <div class="contact-page__social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact Page End-->
+
+      <!--Site Footer Start-->
+      <footer class="site-footer">
+        <div
+          class="site-footer-bg"
+          style="
+            background-image: url(assets/images/backgrounds/testimonial-one-bg.jpg);
+          "
+        ></div>
+        <div class="site-footer__top">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="100ms"
+              >
+                <div class="footer-widget__column footer-widget__about">
+                  <div class="footer-widget__logo">
+                    <a href="index.html"
+                      ><img src="assets/nw/logo-light.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-widget__about-text-box">
+                    <p class="footer-widget__about-text">
+                      Contact us today and let's create something extraordinary
+                      together. At Beach House Productions, the possibilities
+                      are endless—let's make magic happen.
+                    </p>
+                  </div>
+                  <div class="site-footer__social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="200ms"
+              >
+                <div
+                  class="footer-widget__column footer-widget__explore clearfix"
+                >
+                  <h3 class="footer-widget__title">Explore</h3>
+                  <ul
+                    class="footer-widget__explore-list list-unstyled clearfix"
+                  >
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="400ms"
+              >
+                <div
+                  class="footer-widget__column footer-widget__contact clearfix"
+                >
+                  <h3 class="footer-widget__title">Contact</h3>
+                  <ul
+                    class="footer-widget__contact-list list-unstyled clearfix"
+                  >
+                    <li>
+                      <div class="icon">
+                        <span class="icon-phone-call"></span>
+                      </div>
+                      <div class="text">
+                        <h5>Call anytime</h5>
+                        <p><a href="tel:+917539000666">+91 7539000666</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <span class="icon-message"></span>
+                      </div>
+                      <div class="text">
+                        <h5>Send email</h5>
+                        <p>
+                          <a href="mailto:hello@beachhouseproductions.in">hello@beachhouseproductions.in</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <span class="icon-location"></span>
+                      </div>
+                      <div class="text">
+                        <h5>Beach House Productions</h5>
+                        <p>2nd Floor No 01 ,</p>
+                        <p>Fortune Bussiness Park <br>
+                        Cherooty Nagar Calicut
+                        </p>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="site-footer__bottom-inner">
+                  <p class="site-footer__bottom-text">
+                    © Copyright 2024 by
+                    <a href="https://hashtechglobal.com" target="_blank"
+                      >HashTechGlobal</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Site Footer End-->
+    </div>
+    <!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+      <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+      <!-- /.mobile-nav__overlay -->
+      <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"
+          ><i class="fa fa-times"></i
+        ></span>
+
+        <div class="logo-box">
+          <a href="index.html" aria-label="logo image"
+            ><img src="assets/nw/logo-light.png" width="155" alt=""
+          /></a>
+        </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <!-- /.mobile-nav__container -->
+
+        <ul class="mobile-nav__contact list-unstyled">
+          <!-- <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:needhelp@packageName__.com">needhelp@test.com</a>
+          </li> -->
+          <li>
+            <i class="fa fa-phone-alt"></i>
+            <a href="tel:+917539000666">+91 7539000666</a>
+          </li>
+        </ul>
+        <!-- /.mobile-nav__contact -->
+        <div class="mobile-nav__top">
+          <div class="mobile-nav__social">
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-facebook-square"></a>
+            <a href="#" class="fab fa-pinterest-p"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+          <!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__top -->
+      </div>
+      <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+        <form action="#">
+          <label for="search" class="sr-only">search here</label
+          ><!-- /.sr-only -->
+          <input type="text" id="search" placeholder="Search Here..." />
+          <button type="submit" aria-label="search submit" class="thm-btn">
+            <i class="icon-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+
+    <!-- template js -->
+    <script src="assets/js/ambed.js"></script>
+
+    <!-- <script src="assets/js/ambed.js"></script> -->
+    <!-- <script src="../assets/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- slider js -->
+    <!-- <script src="../assets/js/swiper-bundle.min.js"></script> -->
+    <script src="../assets/js/custom-slider.js"></script>
+
+    <!-- custom cursor -->
+    <script src="../assets/js/custom-cursor.js"></script>
+
+    <!-- aos animation -->
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/custom-aos.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- laptop animation js -->
+    <script src="../assets/js/home-animation.js"></script>
+
+    <!-- header sticky js -->
+    <script src="../assets/js/header_sticky.js"></script>
+
+    <!-- pricing js -->
+    <script src="../assets/js/pricing-table.js"></script>
+
+    <!-- Theme js-->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- toolbar js -->
+    <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
+    <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
+    <script src="assets/vendors/toolbar/js/toolbar.js"></script>
+  </body>
+</html>
